@@ -37,7 +37,7 @@ function countVowels(str) {
   // Add your code here
   let count=0;
   for (let letter of str){
-    if ('aeiou'.includes(letter))
+    if ('AaEeIiOoUu'.includes(letter))
       count++;
   }
   return count;
