@@ -1,13 +1,19 @@
 // Sum of Two Numbers
 function sum(a, b) {
   // Add your code here
-  let a,b;
-  return a+b
+  if (typeof  a==='number' && typeof b === 'number')
+    return a+b;
+  else
+    return console.log('Los tipos de datos no son adecuados')
 }
 
 // Factorial of a Number
 function factorial(n) {
   // Add your code here
+  if (n == 0 || n == 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
 }
 
 // Find the Largest Number
