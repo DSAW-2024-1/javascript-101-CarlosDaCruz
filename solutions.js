@@ -10,10 +10,13 @@ function sum(a, b) {
 // Factorial of a Number
 function factorial(n) {
   // Add your code here
-  if (n == 0 || n == 1) {
-    return 1;
-  }
-  return n * factorial(n - 1);
+  if (typeof n === 'number' && n >= 0){
+    if (n == 0 || n == 1) {
+      return 1;
+    }
+    return n * factorial(n - 1);
+  } else 
+      return console.log('Los datos de entrada no son adecuados');
 }
 
 // Find the Largest Number
