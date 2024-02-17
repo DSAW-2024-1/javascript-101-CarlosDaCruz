@@ -22,7 +22,15 @@ function factorial(n) {
 // Find the Largest Number
 function findLargest(arr) {
   // Add your code here
-}
+  let bigOne= arr[0];
+    for (let i=1;i<arr.length;i++){
+      if(arr[i]>bigOne)
+        bigOne = arr[i];
+    }
+  
+    return bigOne;
+  }
+
 
 // Count Vowels in a String
 function countVowels(str) {
