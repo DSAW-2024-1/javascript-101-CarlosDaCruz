@@ -35,6 +35,11 @@ function findLargest(arr) {
 // Count Vowels in a String
 function countVowels(str) {
   // Add your code here
+  if (typeof str !== 'string') {
+    
+    return console.log('Los datos de entrada no son adecuados');;
+  }
+
   let count=0;
   for (let letter of str){
     if ('AaEeIiOoUu'.includes(letter))
