@@ -35,6 +35,12 @@ function findLargest(arr) {
 // Count Vowels in a String
 function countVowels(str) {
   // Add your code here
+  let count=0;
+  for (let letter of str){
+    if ('aeiou'.includes(letter))
+      count++;
+  }
+  return count;
 }
 
 // Check if a Number is Prime
